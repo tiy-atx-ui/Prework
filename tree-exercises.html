@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TIY ATX UI Design PreWork - Tree Exercise</title>
+	<link href="css/reset.css" type="text/css" rel="stylesheet" />
+	<link href="css/responsive-nav.css" type="text/css" rel="stylesheet" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+	<script src="js/responsive-nav.min.js"></script>
+</head>
+<body>
+<div class="site-wrapper">
+	<div class="nav-wrapper beFixed">
+	<div class="logo-wrapper">
+		<img src="images/logo.png" id="logo">
+		<h4>UI Design</h4>
+		<h5>August 2015</h5>
+	</div>
+		<nav class="nav-collapse">
+		  <ul>
+		    <li><a href="index.html#welcome">Home</a></li>
+		    <li><a href="index.html#prework">Prework</a></li>
+		    <li><a href="index.html#objectives">Objectives</a></li>
+		    <li><a href="index.html#mindset">Mindset and Learning</a></li>
+		    <li><a href="index.html#setup">Computer Setup</a></li>
+		    <li><a href="index.html#adobe">Adobe Suite</a></li>
+		    <li><a href="index.html#design">Basic Design Principles</a></li>
+		    <li><a href="index.html#coding">HTML and CSS Basics</a></li>
+		    <li><a href="index.html#markdown">Markdown</a></li>
+		    <li><a href="index.html#typing">Typing</a></li>
+		    <li><a href="index.html#bonus">Bonus</a></li>
+		  </ul>
+		</nav>
+	</div>
+	<div class="content-wrapper">
+	<p><strong>Read the document below and complete the exercises at the bottom.  Send your answers to abby@theironyard.com by <em>5:00pm (CST) on August 20th</em>.  Please submit answers for this exercise as a word document.</strong></p>
+		<div class="tree-wrapper">
+		<h1>Tree Structures</h1>
+		<p>Grab your hoverboard, your self-lacing Nike's, and power on the Delorean because we're taking a trip back to the future (or actually just back to the past). Do you remember in elementary school when you had to make a family tree?  It probably looked something like this:</p>
+			<img src="images/family_tree.png" alt="Family Tree" >
+		
+		<p>Tree structures are a simple way of organizing data for any website or application.  They get their name from the fact that they look like a family tree or an upsidedown tree. It will be important to understand the different parts of a tree structure so that you can structure your code similarly.  So, looking at my family tree, lets break it apart.
+		</p>
+		<h3>Node</h3>
+		<p>A node is a single point of data in the tree structure. In terms of my family, this would correspond to an individual person or pair of people.</p> <img src="images/node.png" alt="Node" >
+		<h3>Root</h3>
+		<p> The root (or root directory) is the top most node of the tree (Frances/Joseph). When it comes to application structure, the root will be the node that stores all of the folders/files.
+		</p>
+		<img src="images/root.png" alt="Root" >
+		<h3>Parent</h3>
+		<p> The parent is any node that is directly above the node in question. In the case of my family tree, if Abigail is the node in question, the Andrew/Veronica node is the parent. Andrew/Veronica is also the parent of Aaron and Elizabeth.  James/Roxane, Paul/Rosita, and Frances/Joseph are also parents.
+		</p>
+		<img src="images/parent.png" alt="Parent" >
+		<h3>Child</h3>
+		<p> A child node is the node(s) directly below the node in question. Just like in a family tree, a parent can have multiple children, but a child can only have one parent. The node in question in this example is Paul/Rosita.  Phoebe, Lucy, and Daniel are all children of the Paul/Rosita node.
+		</p>
+		<img src="images/child.png" alt="Child" >
+		
+		<h3>Sibling</h3>
+		<p> Sibling nodes are nodes with the same parent. Phoebe, Lucy, and Daniel are all siblings because their parent node is Paul/Rosita.  Aaron, Elizabeth, and Abigail are also siblings with each other, while Peter has no siblings.
+		</p>
+		<img src="images/sibling.png" alt="Sibling" >
+		<h3>Descendant (or ancestor)</h3>
+		<p> A descendant node is one that can be traced back from the node in question.  For example, everyone on the tree is a descendent of the Frances/Joseph node.  Peter is the only descendant of James and Roxane.
+		</p>
+		<img src="images/descendant.png" alt="Descendant" >
+		<h3>Leaf</h3>
+		<p> Much like an actual tree, a data tree has a few structural elements as well.  The first is a leaf.  A leaf is a node with no children.  In this case, Aaron, Elizabeth, Abigail, Peter, Phoebe, Lucy, and Daniel are all leaves.
+		</p>
+		<img src="images/leaf.png" alt="Leaf" >
+		<h3>Edge</h3>
+		<p> An edge is similar to the branch of a tree in that it connects different nodes. The highlighted arrow is an edge between Frances/Joseph and Paul/Rosita.
+		</p>
+		<img src="images/edge.png" alt="Edge" >
+		<h3>Path</h3>
+		<p> Finally, a path is a group of edges and nodes that connects a node with its descendant.  This is going to be very important because paths are ways to connect different folders and files to our website in our code. In this example, there is a path from Frances/Joseph to Daniel.
+		</p>
+		<img src="images/path.png" alt="Path" >
+		<h1>Tree Exercises</h1>
+		<p> When it comes to our code, HTML is a tree. The nodes of our tree become a system of files and folders. The following exercises will help to solidify you knowledge of tree structures, but unlike the above examples, will be based off of the basic file structure for a website (not a family tree).
+		</p>
+		<img src="images/website_tree.png" alt="Website Tree" >
+		<h3>Questions</h3>
+		<ol>
+			<li>What is the root directory?</li>
+			<li>How many leaf nodes does the root directory have?</li>
+			<li>What is the parent of main.js?</li>
+			<li>What is/are the sibling(s) of main.js?</li>
+			<li>What are the leaf nodes?</li>
+			<li>How many ancestors does main.js have?</li>
+			<li>What are the children of my_awesome_website?</li>
+			<li>What is/are the sibling(s) of cat2.jpg?</li>
+			<li>What are the descendants of css?</li>
+			<li>How many children of the root node are leaves?</li>
+			<li>What are the descendants of images?</li>
+			<li>What are the children of css?</li>
+			<li>What are cat3.jpg's ancestors (starting with it's parent and working your way up)?</li>
+			<li>How many edges are between images and cat1.jpg?</li>
+			<li>What are the nodes on the path (and including) my_awesome_website and cat2.jpg? (You should write this answer starting with my_awesome_website and ending at cat2.jpg with a / representing each edge between a node)
+			</li>
+		</ol>
+		<div class="fonts">
+			<small><div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div></small>
+		</div>
+		</div>
+		<script src="//use.typekit.net/pzj6ksy.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script>
+		  var nav = responsiveNav(".nav-collapse");
+		  $(document).ready(function() {
+		  	if ( $(window).height() < 600) {
+			    $('.nav-wrapper').addClass('beAbsolute').removeClass('beFixed');
+			  } else {
+			    $('.nav-wrapper').addClass('beFixed').removeClass('beAbsolute');
+			  }
+			});
+		  $(window).resize(function() {
+			  if ( $(window).height() < 600) {
+			    $('.nav-wrapper').addClass('beAbsolute').removeClass('beFixed');
+			  } else {
+			    $('.nav-wrapper').addClass('beFixed').removeClass('beAbsolute');
+			  }
+			});
+		</script>
+
+</div>
+</body>
+</html>

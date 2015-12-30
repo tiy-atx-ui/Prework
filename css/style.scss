@@ -1,0 +1,199 @@
+$orange: #ce832c;
+$blue: #39474e;
+$shield: #233139;
+$bright-blue: #158cbd;
+$sidebar-link: #eef1f6;
+$white: #ffffff;
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+small {
+	font-size: .75em;
+	font-size: 12px;
+	text-align: center;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: $blue;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "ff-tisa-web-pro", serif;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 28px;
+	font-size: 1.75em;
+	margin-bottom: 10px;
+	margin-top: 40px;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+h3 {
+	font-size: 22px;
+	font-size: 1.375em;
+	margin: 15px 0;
+}
+
+h4 {
+	font-size: 18px;
+	font-size: 1.125em;
+}
+
+a {
+	color: $bright-blue;
+
+	&:hover, &:visited, &:focus {
+		color: darken($bright-blue, 5%);
+	}
+}
+
+p, li {
+	line-height: 1.8;
+}
+
+p {
+	padding: 10px 0;
+}
+
+li {
+	padding: 5px 0;
+}
+
+ul {
+	list-style-type: disc;
+	padding-left: 30px;
+}
+
+ol {
+	list-style-type: decimal;
+	padding-left: 30px;
+}
+
+.nav-toggle {
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	font-size: 1.75em;
+	color: #6a7175;
+	font-weight: bolder;
+	text-decoration: none;
+	font-family: "ff-tisa-web-pro";
+	padding: 20px 0;
+	text-align: center;
+	&:hover, &:focus, &:visited {
+		background-color: #6a7175;
+		color: $sidebar-link;
+	}
+}
+
+#logo {
+	width: 50%;
+	margin-left: 25%;
+}
+
+.site-wrapper {
+	max-width: 1000px;
+}
+
+.logo-wrapper {
+	background-color: $shield;
+	padding-bottom: 20px;
+}
+
+.nav-wrapper {
+	background-color: $sidebar-link;
+	h4,h5 {
+		color: #fff;
+		font-style: italic;
+		text-align: center;
+		padding: 5px;
+		letter-spacing: .5px;
+		font-weight: normal;
+	}
+}
+
+nav {
+	padding: 20px;
+	
+	li {
+		padding: 6px 0;
+		&:first-child {
+			padding-top: 0;
+		}
+
+		a {
+			color: #6a7175;
+			font-weight: bolder;
+			text-decoration: none;
+			font-family: "ff-tisa-web-pro";
+			&:hover, &:focus, &:visited {
+				color: #6a7175;
+				border-bottom: 3px solid #6a7175;
+			}
+		}
+	}
+}
+
+.content-wrapper {
+	box-sizing: border-box;
+	margin-top: 0;
+	padding: 20px 40px;
+}
+
+.tree-wrapper {
+	img {
+		width: 100%;
+		margin: 40px 0;
+	}
+
+	h1 {
+		border-top: 1px solid $sidebar-link;
+		padding-top: 20px;
+	}
+}
+
+.fonts {
+	margin: 40px 0 0 20px;
+}
+
+@media screen and (min-width: 640px){
+	.content-wrapper {
+		max-width: 650px;
+		float: left;
+		margin-left: 250px
+	}
+
+	.nav-wrapper {
+		left: 0;
+		top: 0;
+		width: 250px;
+	}
+
+	.beFixed {
+		position: fixed;
+	}
+	.beAbsolute {
+		position: absolute;
+	}
+
+	#logo {
+		width: 120px;
+		margin-left: 60px;
+	}
+
+	.nav-toggle {
+		display: none;
+	}
+}
